@@ -1,6 +1,6 @@
 {
   "name": "create-class-names",
-  "version": "1.0.0",
+  "version": "0.8.0",
   "description":
     "Structured way of exposing classNames to your React component.",
   "main": "src/index.js",
