@@ -1,0 +1,21 @@
+{
+  "name": "create-class-names",
+  "version": "1.0.0",
+  "description":
+    "Structured way of exposing classNames to your React component.",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "format": "prettier --write \"**/*.{js,md}\"",
+    "format:check": "prettier --list-different \"**/*.{js,md}\"",
+    "test": "jest"
+  },
+  "keywords": ["classnames", "class-names", "react"],
+  "author": "Harry Wolff <hello@hswolff.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "jest": "^22.4.2",
+    "prettier": "^1.11.1"
+  }
+}
