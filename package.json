@@ -1,8 +1,7 @@
 {
   "name": "create-class-names",
   "version": "1.0.0",
-  "description":
-    "Structured way of exposing classNames to your React component.",
+  "description": "A utility to extend the values of a classNames object.",
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint src",
