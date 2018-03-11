@@ -145,6 +145,10 @@ assert.deepEquals(result, {
 
 ## Example
 
+Live demo on Codesandbox.
+
+[![Edit createClassNames Demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/13zn2oj594)
+
 A more in depth example with React.
 
 ```js
