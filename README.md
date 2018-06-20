@@ -8,7 +8,7 @@ A utility to define an API for assigning custom classNames to nested elements in
 
 Useful for global styles, css-modules, and css-in-js.
 
-Note: This is not a replacement for the very awesome [classnames](https://github.com/JedWatson/classnames) library. This is meant to be used in conjunction with classnames. Think of this library as a way to combine usages of classnames usages.
+Note: This is not a replacement for the very awesome [classnames](https://github.com/JedWatson/classnames) library. This is meant to be used in conjunction with classnames. Think of this library as a way to combine usages of classnames.
 
 ## What is this?
 
