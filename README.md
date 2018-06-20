@@ -4,34 +4,35 @@
 [![npm version](https://img.shields.io/npm/v/create-class-names.svg?style=flat-square)](https://www.npmjs.com/package/create-class-names)
 [![npm downloads](https://img.shields.io/npm/dm/create-class-names.svg?style=flat-square)](https://www.npmjs.com/package/create-class-names)
 
-A utility to extend the values of a classNames object.
+A utility to define an API for assigning custom classNames to nested elements in a React Component.
 
 Useful for global styles, css-modules, and css-in-js.
 
-## Why?
+Note: This is not a replacement for the very awesome [classnames](https://github.com/JedWatson/classnames) library. This is meant to be used in conjunction with classnames. Think of this library as a way to combine usages of classnames usages.
 
-There is no clear way to extend classNames that are assigned to React Components.
+## What is this?
+
+Commonly React developers will manually expose a `className` prop to their React Component to allow users of that component to customize the style. Also it's very common to use [classnames](https://github.com/JedWatson/classnames) to concatenate those classNames.
 
 ```js
 function Banner(props) {
-  const { children } = props;
+  const { children, className } = props;
   return (
-    <div className="container">
+    <div className={classNames('container', className)}>
       <span className="alert">&#x26a0;</span>
-      {/* I want to customize this text className! */}
       <div className="text">{children}</div>
     </div>
   );
 }
 ```
 
-An easy way to expose customizability is via an additional prop and using the [classnames](https://github.com/JedWatson/classnames) library.
+However if you want to expose the ability to customize the className for a child component, there's no clear way to do that. A common method is to expose another `prop`, such as `textClassName`.
 
 ```js
 function Banner(props) {
   const { children, textClassName } = props;
   return (
-    <div className="container">
+    <div className={classNames('container', className)}>
       <span className="alert">&#x26a0;</span>
       <div className={classNames('text', textClassName)}>{children}</div>
     </div>
